@@ -38,6 +38,10 @@ Route::get('/tentang', function () {
     return view('tentang');
 });
 
+Route::get('/test', function () {
+    return view('home');
+});
+
 Route::get('/tentang', [TentangController::class, 'index']);
 
 Route::get('/visi-misi-tujuan', function () {
