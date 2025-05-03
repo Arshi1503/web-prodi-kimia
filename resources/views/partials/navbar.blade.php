@@ -1,6 +1,34 @@
-<header> 
+<header class="tw-sticky tw-top-0 tw-z-50"> 
     <!-- start navigation -->
-    <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse glass-effect" data-header-hover="light">
+        <div class="tw-w-full tw-bg-[#3b82f6] tw-shadow tw-pt-3 tw-pb-0.5 tw-px-6 tw-flex tw-justify-between tw-items-center tw-text-sm tw-font-medium tw-sticky tw-top-0   ">
+
+            <!-- Kiri: Logo atau Judul -->
+          
+            <!-- Tengah: Menu Navigasi -->
+            <div class="tw-hidden lg:tw-flex tw-gap-6">
+              <a href="https://siakad.iwu.ac.id/login/" class="tw-flex tw-text-base tw-text-gray-200 tw-items-center tw-gap-1 hover:tw-text-gray-100 transition-all duration-300">
+                <i class="bi bi-mortarboard"></i> Dashboard
+              </a>
+              <a href="https://siakad.iwu.ac.id/login/" class="tw-flex tw-text-base tw-text-gray-200 tw-items-center tw-gap-1 hover:tw-text-gray-100 transition-all duration-300">
+                <i class="bi bi-journal-bookmark"></i> LMS IWU
+              </a>
+              <a href="https://pmb.iwu.ac.id/" class="tw-flex tw-text-gray-200 tw-text-base tw-items-center tw-gap-1 hover:tw-text-gray-100 transition-all duration-300">
+                <i class="bi bi-book"></i> PMB IWU
+              </a>
+            </div>
+          
+            <!-- Kanan: Pilihan Bahasa -->
+            <div class="tw-hidden lg:tw-flex tw-gap-2">
+              <button class="tw-bg-[#3b82f6] tw-px-3 tw-py-1 tw-rounded hover:tw-bg-[#4e8ef6] tw-text-gray-300 hover:tw-text-gray-100 transition">
+                <img src="{{asset ('images/gambar/idn-flag.png')}}" alt="" width="20">🇮🇩</button>
+              <button class="tw-bg-[#3b82f6] tw-px-3 tw-py-1 tw-rounded hover:tw-bg-[#4e8ef6] tw-text-gray-300 hover:tw-text-gray-100 transition">
+                <img src="{{asset ('images/gambar/eng-flag.png')}}" alt="" width="20">🇺🇸</button>
+              <button class="tw-bg-[#3b82f6] tw-px-3 tw-py-1 tw-rounded hover:tw-bg-[#4e8ef6] tw-text-gray-300 hover:tw-text-gray-100 transition">
+                <img src="{{asset ('images/gambar/kr-flag.png')}}" alt=" " width="20">🇰🇷</button>
+            </div>
+          
+    </div>
+    <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse glass-effect tw-mt-12" data-header-hover="light">
         <div class="container-fluid">
             <div class="col-auto col-xxl-3 col-lg-2 me-lg-0 me-auto">
                 <a class="navbar-brand" href="demo-it-business.html">
