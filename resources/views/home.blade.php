@@ -30,11 +30,11 @@
         <section> 
             <div class="container">  
                 <div class="row justify-content-center mb-3">
-                    <div class="col-lg-7 col-md-8 col-sm-9 text-center" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="col-lg-7 text-center" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                         <h3 class="text-dark-gray fw-700 ls-minus-2px">Mengapa memilih program studi kimia?</h3>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-5" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div class="row row-cols-1 row-cols-lg-3  justify-content-center mb-5" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <!-- start features box item -->
                     <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div class="bg-very-light-gray h-100 justify-content-end feature-box flex-column-reverse p-15 md-p-13 border-radius-8px">
@@ -173,7 +173,7 @@
                         </div>  
                     </div> 
                     <div class="col-lg-6 text-center md-mb-20px offset-xl-1"> 
-                        <figure class="position-relative mb-0 overflow-hidden" data-shadow-animation="true" data-bottom-top="transform: translateY(70px)" data-top-bottom="transform: translateY(-70px)"> 
+                        <figure class="position-relative mb-0 overflow-hidden tw-hidden lg:tw-block" data-shadow-animation="true" data-bottom-top="transform: translateY(70px)" data-top-bottom="transform: translateY(-70px)"> 
                             <img src="{{ asset('images/gambar/hero-4.jpg') }}" class="w-100 border-radius-6px" alt=""> 
                         </figure>
                     </div>
@@ -205,8 +205,8 @@
                         </a>                        
                     </div>
                     <div class="col-lg-6 position-relative md-mt-14 sm-mt-17 xs-mt-23"> 
-                        <div class="w-70 md-w-75 xs-w-90 tw-ml-32" data-animation-delay="50" data-shadow-animation="true">
-                            <img src="{{ asset('images/gambar/foto2.jpg') }}" alt="" class=" border-radius-8px w-100">
+                        <div class="w-70 md-w-75 xs-w-90 lg:tw-ml-32 md:tw-ml-56 tw-ml-5" data-animation-delay="50">
+                            <img src="{{ asset('images/gambar/foto2.jpg') }}" alt="" class="border-radius-8px tw-w-[100%] md:tw-w-[70%] lg:tw-w-[100%]">
                         </div>
                     </div> 
                 </div> 

@@ -1,7 +1,7 @@
 <header>
   <!-- start navigation -->
   <!-- TOP BAR -->
-<div class="tw-w-full tw-bg-[#3B82F6] tw-shadow tw-pt-3 tw-pb-0.5 tw-px-6 tw-flex tw-justify-between tw-items-center tw-text-sm tw-font-medium tw-sticky tw-top-0">
+<div class="tw-w-full tw-bg-primary tw-shadow tw-pt-3 tw-pb-0.5 tw-px-6 tw-flex tw-justify-between tw-items-center tw-text-sm tw-font-medium tw-sticky tw-top-0">
 
 <!-- Kiri: Logo atau Judul -->
 
@@ -20,11 +20,11 @@
 
 <!-- Kanan: Pilihan Bahasa -->
 <div class="tw-hidden lg:tw-flex tw-gap-2">
-  <button class="tw-bg-[#3B82F6] tw-px-3 tw-py-1 tw-rounded hover:tw-bg-[#4e8ef6] tw-text-gray-300 hover:tw-text-gray-100 transition">
+  <button class="tw-bg-primary tw-px-3 tw-py-1 tw-rounded hover:tw-bg-secondary tw-text-gray-300 hover:tw-text-gray-100 transition">
     <img src="{{asset ('images/gambar/idn-flag.png')}}" alt="" width="20">🇮🇩</button>
-  <button class="tw-bg-[#3B82F6] tw-px-3 tw-py-1 tw-rounded hover:tw-bg-[#4e8ef6] tw-text-gray-300 hover:tw-text-gray-100 transition">
+  <button class="tw-bg-primary tw-px-3 tw-py-1 tw-rounded hover:tw-bg-secondary tw-text-gray-300 hover:tw-text-gray-100 transition">
     <img src="{{asset ('images/gambar/eng-flag.png')}}" alt="" width="20">🇺🇸</button>
-  <button class="tw-bg-[#3B82F6] tw-px-3 tw-py-1 tw-rounded hover:tw-bg-[#4e8ef6] tw-text-gray-300 hover:tw-text-gray-100 transition">
+  <button class="tw-bg-primary tw-px-3 tw-py-1 tw-rounded hover:tw-bg-secondary tw-text-gray-300 hover:tw-text-gray-100 transition">
     <img src="{{asset ('images/gambar/kr-flag.png')}}" alt=" " width="20">🇰🇷</button>
 </div>
 
@@ -52,7 +52,7 @@
                             <a href="/tentang" class="nav-link">Tentang Kami</a>
                             <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                <li><a href="/tentang">Tentang Administrasi Bisnis</a></li>
+                                <li><a href="/tentang">Tentang Prodi Kimia</a></li>
                                 <li><a href="/visi-misi-tujuan">Visi, Misi, dan Tujuan</a></li>
                                 <li><a href="/struktur-organisasi">Struktur Organisasi</a></li>
                                 <li><a href="/fasilitas">Fasilitas</a></li>
