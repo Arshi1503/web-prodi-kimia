@@ -29,13 +29,17 @@ use App\Http\Controllers\PersyaratanMasukController;
 */
 
 Route::get('/', function () {
-    return view('beranda');
+    return view('home');
 });
 
 Route::get('/', [BerandaController::class, 'index']);
 
 Route::get('/tentang', function () {
     return view('tentang');
+});
+
+Route::get('/test', function () {
+    return view('home');
 });
 
 Route::get('/tentang', [TentangController::class, 'index']);

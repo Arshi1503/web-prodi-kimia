@@ -100,6 +100,13 @@ body {
   word-break: break-word;
   -webkit-font-smoothing: antialiased;
 }
+body.loading{
+  overflow: hidden;
+}
+main{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 section {
   padding-top: 110px;
   padding-bottom: 110px;
