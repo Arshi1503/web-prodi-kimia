@@ -82,16 +82,23 @@
         <section class="pt-0 big-section">
             <div class="container">
                 <div class="row align-items-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
-                    <div class="col-lg-6 position-relative md-mb-14 sm-mb-17 xs-mb-23"> 
+                    <div class="col-lg-6 position-relative md-mb-14 sm-mb-17 xs-mb-23">
                         <div class="w-70 md-w-75 xs-w-90" data-animation-delay="50" data-shadow-animation="true">
+                            {{-- @if ($tentang && $tentang->thumbnail)
+                                <img src="{{ asset('storage/'. $tentang->thumbnail) }}" alt="" class="border-radius-8px w-100">
+                            @endif --}}
                             <img src="{{ asset('images/gambar/hero.jpg') }}" alt="" class="border-radius-8px w-100">
                         </div>
                         <div class="w-55 overflow-hidden position-absolute right-15px xs-w-60 bottom-minus-20px" data-shadow-animation="true" data-animation-delay="250" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                            {{-- Tambahkan Gambar berukuran kecil backend --}}
                             <img src="{{ asset('images/gambar/hero-3.jpg') }}" alt="" class="border-radius-8px w-100 box-shadow-quadruple-large" />
                         </div>
                     </div> 
                     <div class="col-xl-5 offset-xl-1 col-lg-6 text-center text-lg-start">
-                        <h3 class="fw-700 text-dark-gray ls-minus-2px">Apa yang Dipelajari dalam Prodi Kimia?</h3> 
+                        <h3 class="fw-700 text-dark-gray ls-minus-2px">Apa yang Dipelajari dalam Prodi Kimia?</h3>
+                        {{-- @if ($tentang && $tentang->deskripsi)
+                            <p class="mb-40px xs-mb-30px w-90 lg-w-95 md-w-100">{!! $tentang->deskripsi !!}</p>
+                        @endif  --}}
                         <p class="mb-40px xs-mb-30px w-90 lg-w-95 md-w-100">Program Studi Kimia adalah bidang pendidikan tinggi yang mempelajari struktur, sifat, reaksi, dan perubahan materi pada tingkat atom dan molekul. Mahasiswa di prodi ini akan mempelajari teori kimia dasar hingga lanjutan, teknik analisis laboratorium, serta penerapan kimia dalam berbagai sektor seperti industri, lingkungan, kesehatan, dan riset.
                         Prodi ini bertujuan menghasilkan lulusan yang kompeten dalam berpikir ilmiah, memiliki keterampilan laboratorium, dan siap bersaing di dunia kerja maupun akademik.</p> 
                         <a href="#" class="btn btn-large btn-rounded with-rounded btn-base-color btn-round-edge btn-box-shadow">
@@ -126,6 +133,9 @@
                                     </div>
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-40px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Visi</span>
+                                        {{-- @if ($visiMisiTujuan && $visiMisiTujuan->visi)
+                                        <p class="w-90 sm-w-100">{!! $visiMisiTujuan->visi !!}</p>
+                                        @endif --}}
                                         <p class="w-90 sm-w-100">Menjadi Program Studi Kimia yang unggul dalam pendidikan, penelitian, dan pengabdian kepada masyarakat, serta mampu bersaing di tingkat nasional maupun internasional pada tahun 2030.</p>
                                     </div>
                                 </div> 
@@ -143,6 +153,9 @@
                                     </div>
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-40px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Misi</span>
+                                        {{-- @if ($visiMisiTujuan && $visiMisiTujuan->misi)
+                                        <p class="w-90 sm-w-100">{!! $visiMisiTujuan->misi !!}</p>
+                                        @endif --}}
                                         <p class="w-90 sm-w-100">Mengembangkan penelitian inovatif yang mendukung kemajuan ilmu pengetahuan dan kebutuhan industri.</p>
                                     </div>
                                 </div> 
@@ -159,6 +172,9 @@
                                     </div>
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-30px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Tujuan</span>
+                                        {{-- @if ($visiMisiTujuan && $visiMisiTujuan->tujuan)
+                                        <p class="w-90 sm-w-100">{!! $visiMisiTujuan->tujuan !!}</p>
+                                        @endif --}}
                                         <p class="w-90 sm-w-100">Mendorong terciptanya inovasi dan solusi praktis melalui kegiatan penelitian dan pengabdian masyarakat.</p>
                                     </div>
                                 </div> 
@@ -172,7 +188,8 @@
                             </a>  
                         </div>  
                     </div> 
-                    <div class="col-lg-6 text-center md-mb-20px offset-xl-1"> 
+                    <div class="col-lg-6 text-center md-mb-20px offset-xl-1">
+                        {{-- Tambahkan Gambar berukuran besar di backend --}}
                         <figure class="position-relative mb-0 overflow-hidden tw-hidden lg:tw-block" data-shadow-animation="true" data-bottom-top="transform: translateY(70px)" data-top-bottom="transform: translateY(-70px)"> 
                             <img src="{{ asset('images/gambar/hero-4.jpg') }}" class="w-100 border-radius-6px" alt=""> 
                         </figure>
@@ -188,6 +205,9 @@
                     <div class="col-xl-5 offset-xl-1 col-lg-6 text-center text-lg-start">
                         <h3 class="fw-700 text-dark-gray ls-minus-2px">Kata Sambutan</h3> 
                         <div class="tw-space-y-4 tw-text-justify tw-text-base tw-leading-relaxed tw-w-90 lg:tw-w-95 md:tw-w-full">
+                            {{-- @if ($pimpinanStaff && $pimpinanStaff->kata_sambutan)
+                                <p>{!! $pimpinanStaff->kata_sambutan !!}</p>
+                            @endif --}}
                             <p>Selamat datang di website resmi Program Studi Kimia.</p>
 
                             <p>Kami bangga menjadi bagian dari institusi yang terus berinovasi dan berkomitmen mencetak lulusan yang tidak hanya memahami ilmu kimia secara teori, tetapi juga mampu mengaplikasikannya dalam kehidupan nyata.</p>
@@ -206,6 +226,9 @@
                     </div>
                     <div class="col-lg-6 position-relative md-mt-14 sm-mt-17 xs-mt-23"> 
                         <div class="w-70 md-w-75 xs-w-90 lg:tw-ml-32 md:tw-ml-56 tw-ml-5" data-animation-delay="50">
+                            {{-- @if ($pimpinanStaff && $pimpinanStaff->foto)
+                                <img src="{{ asset('storage/'. $pimpinanStaff->foto) }}" alt="" class="border-radius-8px tw-w-[100%] md:tw-w-[70%] lg:tw-w-[100%]">
+                            @endif --}}
                             <img src="{{ asset('images/gambar/foto2.jpg') }}" alt="" class="border-radius-8px tw-w-[100%] md:tw-w-[70%] lg:tw-w-[100%]">
                         </div>
                     </div> 
@@ -227,6 +250,42 @@
                     <div class="col-12">
                         <ul class="blog-grid blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                             <li class="grid-sizer"></li>
+                            {{-- @foreach ($publikasi->where('status', 'Berita')->sortByDesc('waktu')->take(3) as $item)
+                            <li class="grid-item">
+                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover" style="min-height: 450px; display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div class="blog-image" style="height: 200px; overflow: hidden;">
+                                        @if ($item->gambar)
+                                        <a href="{{ route('detail-berita', ['id' => $item->id]) }}'" class="d-block">
+                                            <img src="{{ asset('storage/' . $item->gambar) }}" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+                                        </a>
+                                        @endif
+                                    </div>
+                                    <div class="card-body p-12 lg-p-10" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 0;">
+                                        @if ($item->judul)
+                                        <a href="{{ route('detail-berita', ['id' => $item->id]) }}'" 
+                                        class="card-title mb-3 fw-600 fs-20 text-dark-gray d-inline-block" 
+                                        style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                            {!! Str::limit($item->judul, 90) !!}
+                                        </a>
+                                        @endif
+                                        @if ($item->deskripsi)
+                                        <p style="margin-top: 5px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                                            {!! Str::limit($item->deskripsi, 120) !!}
+                                        </p>
+                                        @endif
+                                        <div class="d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase mt-auto">
+                                            <div class="me-auto">
+                                                @if ($item->waktu)
+                                                <span class="blog-date d-inline-block fw-600 text-dark-gray">
+                                                    {{ \Carbon\Carbon::parse($item->waktu)->translatedFormat('d F Y') }}
+                                                </span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            @endforeach --}}
                             <!-- start blog list -->
                             <li class="grid-item">
                                 <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover" style="min-height: 450px; display: flex; flex-direction: column; justify-content: space-between;">
