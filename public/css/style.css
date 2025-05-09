@@ -7156,7 +7156,6 @@ header.sticky .navbar.disable-fixed {
   word-break: normal;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: var(--white);
 }
 .navbar .navbar-nav .nav-link .label {
   display: inline-block;

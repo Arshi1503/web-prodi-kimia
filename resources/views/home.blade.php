@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+﻿@extends('layouts.app', ['isHome' => true])
 @section('title', 'Beranda')
 
 @section('content')
