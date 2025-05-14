@@ -2,7 +2,7 @@
 @section('title', 'Sturktur Organisasi')
 @section('content')
         <!-- Start Section -->
-        <section id="kurikulum" class="mb-0 pb-0" style="margin-top: 50px;">
+        <section id="kurikulum" class="tw-mb-[50px] pb-0" style="margin-top: 50px;">
             <div class="container text-center">
                 <div class="card shadow-lg border-0 rounded-3 overflow-hidden"
                     data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>

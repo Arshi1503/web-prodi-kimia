@@ -134,7 +134,7 @@
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-40px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Visi</span>
                                         @if ($visiMisiTujuan && $visiMisiTujuan->visi)
-                                        <p class="w-90 sm-w-100">{!! $visiMisiTujuan->visi !!}</p>
+                                        <span class="w-90 sm-w-100">{!! $visiMisiTujuan->visi !!}</span>
                                         @endif
                                         {{-- <p class="w-90 sm-w-100">Menjadi Program Studi Kimia yang unggul dalam pendidikan, penelitian, dan pengabdian kepada masyarakat, serta mampu bersaing di tingkat nasional maupun internasional pada tahun 2030.</p> --}}
                                     </div>
@@ -154,7 +154,7 @@
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-40px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Misi</span>
                                         @if ($visiMisiTujuan && $visiMisiTujuan->misi)
-                                        <p class="w-90 sm-w-100">{!! $visiMisiTujuan->misi !!}</p>
+                                        <span class="w-90 sm-w-100">{!! $visiMisiTujuan->misi !!}</span>
                                         @endif
                                         {{-- <p class="w-90 sm-w-100">Mengembangkan penelitian inovatif yang mendukung kemajuan ilmu pengetahuan dan kebutuhan industri.</p> --}}
                                     </div>
@@ -173,7 +173,7 @@
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-30px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Tujuan</span>
                                         @if ($visiMisiTujuan && $visiMisiTujuan->tujuan)
-                                        <p class="w-90 sm-w-100">{!! $visiMisiTujuan->tujuan !!}</p>
+                                        <span class="w-90 sm-w-100">{!! $visiMisiTujuan->tujuan !!}</span>
                                         @endif
                                         {{-- <p class="w-90 sm-w-100">Mendorong terciptanya inovasi dan solusi praktis melalui kegiatan penelitian dan pengabdian masyarakat.</p> --}}
                                     </div>

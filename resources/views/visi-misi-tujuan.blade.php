@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Visi, Misi dan Tujuan')
 @section('content')
-        <section id="visi-misi" class="mb-0 pb-0" style="margin-top: 50px;">
+        <section id="visi-misi" class="tw-mb-[50px] pb-0" style="margin-top: 50px;">
             <div class="container text-center">
                 <div class="card shadow-lg border-0 rounded-3 overflow-hidden mb-0" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card-body p-4">
