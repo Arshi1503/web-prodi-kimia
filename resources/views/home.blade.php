@@ -27,7 +27,7 @@
         </section>
         <!-- end page title --> 
         <!-- start section -->
-        <section> 
+        {{-- <section> 
             <div class="container">  
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-7 text-center" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
@@ -76,7 +76,7 @@
                     <!-- end features box item -->
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end section -->
         <!-- start section -->
         <section class="pt-0 big-section">

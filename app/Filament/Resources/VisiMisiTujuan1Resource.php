@@ -42,7 +42,7 @@ class VisiMisiTujuan1Resource extends Resource
                             ->required(),
                     ])
                     ->defaultItems(1)
-                    ->createItemButtonLabel('Tambah Baris Misi'),
+                    ->addActionLabel('Tambah Baris Misi'),
                 Repeater::make('tujuan')
                     ->label('Tujuan')
                     ->columnSpanFull()
@@ -52,7 +52,7 @@ class VisiMisiTujuan1Resource extends Resource
                             ->required(),
                     ])
                     ->defaultItems(1)
-                    ->createItemButtonLabel('Tambah Baris Tujuan'),
+                    ->addActionLabel('Tambah Baris Tujuan'),
             ]);
     }
 
@@ -117,6 +117,6 @@ class VisiMisiTujuan1Resource extends Resource
 
     public static function getNavigationLabel(): string
     {
-        return 'Visi, Misi dan Tujuan';
+        return 'Visi, Misi dan Tujuan'; 
     }
 }
