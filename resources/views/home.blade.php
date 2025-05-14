@@ -27,7 +27,7 @@
         </section>
         <!-- end page title --> 
         <!-- start section -->
-        <section> 
+        {{-- <section> 
             <div class="container">  
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-7 text-center" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
@@ -76,7 +76,7 @@
                     <!-- end features box item -->
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end section -->
         <!-- start section -->
         <section class="pt-0 big-section">
@@ -153,8 +153,10 @@
                                     </div>
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-40px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Misi</span>
-                                        @if ($visiMisiTujuan && $visiMisiTujuan->misi)
-                                        <span class="w-90 sm-w-100">{!! $visiMisiTujuan->misi !!}</span>
+                                        @if ($visiMisiTujuan && is_array($visiMisiTujuan->misi) && count($visiMisiTujuan->misi) > 0)
+                                        <span class="w-90 sm-w-100">
+                                            {!! $visiMisiTujuan->misi[0]['text'] !!}
+                                        </span>
                                         @endif
                                         {{-- <p class="w-90 sm-w-100">Mengembangkan penelitian inovatif yang mendukung kemajuan ilmu pengetahuan dan kebutuhan industri.</p> --}}
                                     </div>
@@ -172,8 +174,10 @@
                                     </div>
                                     <div class="process-content ps-35px sm-ps-25px last-paragraph-no-margin mb-30px">
                                         <span class="d-block fw-600 text-dark-gray fs-17 mb-5px">Tujuan</span>
-                                        @if ($visiMisiTujuan && $visiMisiTujuan->tujuan)
-                                        <span class="w-90 sm-w-100">{!! $visiMisiTujuan->tujuan !!}</span>
+                                        @if ($visiMisiTujuan && is_array($visiMisiTujuan->tujuan) && count($visiMisiTujuan->tujuan) > 0)
+                                        <span class="w-90 sm-w-100">
+                                            {!! $visiMisiTujuan->tujuan[0]['text'] !!}
+                                        </span>
                                         @endif
                                         {{-- <p class="w-90 sm-w-100">Mendorong terciptanya inovasi dan solusi praktis melalui kegiatan penelitian dan pengabdian masyarakat.</p> --}}
                                     </div>
