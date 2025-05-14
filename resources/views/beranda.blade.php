@@ -321,7 +321,7 @@
                             </div>
                             <span class="d-inline-block fs-32 fw-500 text-white mb-5px">Visi</span>
                             @if ($visiMisiTujuan && $visiMisiTujuan->visi)
-                            <p class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->visi !!}</p>
+                            <span class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->visi !!}</span>
                             @endif
                         </div>
                         <!-- End Process Step Item -->
@@ -339,7 +339,7 @@
                             </div>
                             <span class="d-inline-block fs-32 fw-500 text-white mb-5px">Misi</span>
                             @if ($visiMisiTujuan && $visiMisiTujuan->misi)
-                            <p class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->misi !!}</p>
+                            <span class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->misi !!}</span>
                             @endif
                         </div>
                         <!-- end process step item -->
@@ -357,7 +357,7 @@
                             </div>
                             <span class="d-inline-block fs-32 fw-500 text-white mb-5px">Tujuan</span>
                             @if ($visiMisiTujuan && $visiMisiTujuan->tujuan)
-                            <p class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->tujuan !!}</p>
+                            <span class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->tujuan !!}</span>
                             @endif
                         </div>
                         <!-- end process step item -->

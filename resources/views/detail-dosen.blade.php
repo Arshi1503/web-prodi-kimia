@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Detail Dosen')
 @section('content')
-    <div class="container mt-12">
+        <div class="container mt-12">
         <div class="row">
             <!-- Profil Dosen -->
             <div class="col-md-4 text-center p-3 border rounded shadow-sm">
